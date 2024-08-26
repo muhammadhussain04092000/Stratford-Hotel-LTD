@@ -1,0 +1,248 @@
+* {box-sizing:border-box}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    text-align: justify;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 2560px;
+    position: relative;
+    margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+    
+/* Header/logo Title */
+.header {
+    padding: 80px;
+    text-align: center;
+    background: #2071f5;
+    color: white;
+}
+    
+/* Increase the font size of the heading */
+.header h1 {
+    font-size: 40px;
+}
+
+/* Sticky navbar - toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed). The sticky value is not supported in IE or Edge 15 and earlier versions. However, for these versions the navbar will inherit default position */
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+}
+    
+/* Style the navigation bar links */
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+    
+/* Right-aligned link */
+.navbar a.right {
+    float: right;
+}
+    
+/* Change color on hover */
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+}
+
+.footer iframe {
+    width: 1640px;
+    height: 700px;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 374px) {
+    .footer iframe {
+        width: 240px;
+        height: 200px;
+    }
+}
+        
+@media only screen and (min-width: 375px) and (max-width: 424px) {
+    .footer iframe {
+        width: 325px;
+        height: 275px;
+    }
+}
+        
+@media only screen and (min-width: 425px) and (max-width: 450px) {   
+    .footer iframe {
+        width: 375px;
+        height: 325px;
+    }
+}
+
+@media only screen and (min-width: 530px) and (max-width: 630px) {
+    .footer iframe {
+        width: 480px;
+        height: 430px;
+    }
+}
+
+@media only screen and (min-width: 750px) and (max-width: 800px) {
+    .footer iframe {
+        width: 718px;
+        height: 500px;
+    }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1439px) {
+    .footer iframe {
+        width: 974px;
+        height: 624px;
+    }
+}
+
+@media only screen and (min-width: 1440px) and (max-width: 1499px) {
+    .footer iframe {
+        width: 1390px;
+        height: 800px;
+    }
+}
+
+@media only screen and  (min-width: 1500px) and (max-width: 1632px) {
+    .footer iframe {
+        width: 1450px;
+        height: 800px;
+    }
+}
+
+@media only screen and (min-width: 2560px) {
+    body{
+        font-size: larger;
+    }
+    
+    p, figcaption, a {
+        font-size: 40px;
+    }
+    
+    .header {
+        padding: 150px;
+    }
+    
+    .header h1 {
+        font-size: 100px;
+    }
+    
+    .navbar {
+        padding: 10px;
+    }
+
+    .prev, .next {
+        padding: 40px;
+        font-size: 40px;
+    }
+
+    .text {
+        font-size: 40px;
+    }
+
+    .dot {
+        height: 30px;
+        width: 30px;
+    }
+
+    .footer h2 {
+        font-size: 60px;
+    }
+
+    .footer iframe {
+        width: 2510px;
+        height: 1000px;
+    }
+}

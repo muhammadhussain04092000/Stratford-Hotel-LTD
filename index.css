@@ -1,0 +1,297 @@
+* {
+    box-sizing: border-box;
+}
+    
+/* Style the body */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    text-align: justify;
+}
+    
+/* Header/logo Title */
+.header {
+    padding: 80px;
+    text-align: center;
+    background: #2071f5;
+    color: white;
+}
+    
+/* Increase the font size of the heading */
+.header h1 {
+    font-size: 40px;
+}
+    
+/* Sticky navbar - toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed). The sticky value is not supported in IE or Edge 15 and earlier versions. However, for these versions the navbar will inherit default position */
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+}
+    
+/* Style the navigation bar links */
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+    
+    
+/* Right-aligned link */
+.navbar a.right {
+    float: right;
+}
+    
+/* Change color on hover */
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+    
+/* Active/current link */
+.navbar a.active {
+    background-color: #666;
+    color: white;
+}
+    
+/* Column container */
+.row {  
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+}
+    
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+    -ms-flex: 30%; /* IE10 */
+    flex: 30%;
+    background-color: #f1f1f1;
+    padding: 20px;
+}
+    
+/* Main column */
+.main {   
+    -ms-flex: 70%; /* IE10 */
+    flex: 70%;
+    background-color: white;
+    padding: 20px;
+}
+    
+.main a {
+    color: blue;
+}
+    
+/* Fake image, just for this example */
+.fakeimg {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+}
+    
+.mainlogo {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+}
+    
+.mainlogo img {
+    height: 200px;
+}
+    
+.button {
+    background-color: #2071f5; /* Blue */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+/* Footer */
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+}
+
+.footer iframe {
+    width: 1640px;
+    height: 700px;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 374px) {
+    .main {
+        text-align: justify;
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+        
+    .side .mainlogo {
+        height: 250px;
+    }
+
+    .mainlogo {
+        height: 250px;
+    }
+    
+    .footer iframe {
+        width: 240px;
+        height: 200px;
+    }
+}
+        
+@media only screen and (min-width: 375px) and (max-width: 424px) {
+    .main {
+        text-align: justify;
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+        
+    .side .mainlogo {
+        height: 275px;
+    }
+
+    .mainlogo {
+        height: 275px;
+    }
+        
+    .footer iframe {
+        width: 325px;
+        height: 275px;
+    }
+}
+        
+@media only screen and (min-width: 425px) and (max-width: 450px) {   
+    .main {
+        text-align: justify;
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+        
+    .side .mainlogo {
+        height: 325px;
+    }
+
+    .mainlogo {
+        height: 325px;
+    }
+        
+    .footer iframe {
+        width: 375px;
+        height: 325px;
+    }
+}
+
+@media only screen and (min-width: 530px) and (max-width: 630px) {
+    .main {
+        text-align: justify;
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+
+    .side .mainlogo {
+        height: 500px;
+    }
+
+    .mainlogo {
+        height: 500px;
+    }
+
+    .footer iframe {
+        width: 480px;
+        height: 430px;
+    }
+}
+
+@media only screen and (min-width: 750px) and (max-width: 800px) {
+    .footer iframe {
+        width: 718px;
+        height: 500px;
+    }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1439px) {
+    .footer iframe {
+        width: 974px;
+        height: 624px;
+    }
+}
+
+@media only screen and (min-width: 1440px) and (max-width: 1499px) {
+    .footer iframe {
+        width: 1390px;
+        height: 800px;
+    }
+}
+
+@media only screen and  (min-width: 1500px) and (max-width: 1632px) {
+    .footer iframe {
+        width: 1450px;
+        height: 800px;
+    }
+}
+
+@media only screen and (min-width: 2560px) {
+    body{
+        font-size: larger;
+    }
+
+    p, figcaption, a {
+        font-size: 40px;
+    }
+
+    .header {
+        padding: 150px;
+    }
+
+    .header h1 {
+        font-size: 100px;
+    }
+
+    .navbar {
+        padding: 10px;
+    }
+
+    .side h2 {
+        font-size: 50px;
+    }
+
+    .side h3 {
+        font-size: 45px;
+    }
+
+    .side h5 {
+        font-size: 30px;
+    }
+
+    .main h2 {
+        font-size: 50px;
+    }
+
+    .main h5 {
+        font-size: 30px;
+    }
+
+    .button {
+        padding: 40px 60px;
+        font-size: 40px;
+    }
+
+    .footer h2 {
+        font-size: 60px;
+    }
+
+    .footer iframe {
+        width: 2510px;
+        height: 1000px;
+    }
+}

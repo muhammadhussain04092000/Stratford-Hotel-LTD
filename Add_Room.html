@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" type="x-icon" href="Images/Logo.png">
+    <meta name="viewport" content="width=device-width">
+    <title>Stratford Hotel LTD</title>
+    <link href="Add_Room.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <div class="navbar">
+        <a href="./manager.php" class="active">Home</a>
+        <!-- <a href="./View_Occupants.php">Occupants</a> -->
+        <a href="./View_Room.php">Room Info</a>
+        <a href="./View_Employee.php">Employees</a>
+        <a href="./View_Booking.php">Booking Responses</a>
+        <a href="./View_Contact.php">Contact Responses</a>
+        <a href="./index.html" class="right">Log Out</a>
+    </div>
+    <form class="modal-content animate" action="Update_Room.php" method="POST">
+        <center><h1>Update Room Info</h1></center>
+        <br>
+        <div class="container">
+            <label>Room Type</label>
+            <select name="room_type" id="room_type" required>
+                <option>Single</option>
+                <option>Double</option>
+                <option>Triple</option>
+                <option>Quintiple</option>
+            </select>
+            <br>
+            <br>
+            <label>Frequency</label>
+            <input type="number" name="frequency" required>
+            <br>
+            <br>
+            <label>Available Rooms</label>
+            <input type="number" name="available" required>
+            <br>
+            <br>
+            <label>Occupied Rooms</label>
+            <input type="number" name="occupied" required>
+            <br>
+            <br>
+            <label>Price</label>
+            <input type="number" name="price" required>
+            <br>
+            <br>
+            <button type="submit" class="btn">Submit</button>
+        </div>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
